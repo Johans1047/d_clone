@@ -31,13 +31,12 @@ Asegúrate de tener instaladas las siguientes herramientas antes de comenzar:
 
 En la carpeta raíz del proyecto, instala las dependencias del servidor Node.js:
 
-```shell
-cd tu-proyecto
-npm installç
 
-Cambia al directorio de la aplicación Angular y también instala las dependencias:
-cd client
+cd tu-proyecto
 npm install
+
+## Cambia al directorio de la aplicación Angular y también instala las dependencias:
+```cd client npm install```
 
 Configuración de la base de datos PostgreSQL
 Configura la base de datos PostgreSQL según tus necesidades y actualiza la configuración en config/config.json (o el archivo de configuración correspondiente).
