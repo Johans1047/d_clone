@@ -32,36 +32,37 @@ Asegúrate de tener instaladas las siguientes herramientas antes de comenzar:
 En la carpeta raíz del proyecto, instala las dependencias del servidor Node.js:
 
 
-cd tu-proyecto
-npm install
+```cd tu-proyecto```
+```npm install```
 
 ## Cambia al directorio de la aplicación Angular y también instala las dependencias:
-```cd client npm install```
+```cd client```
+```npm install```
 
-Configuración de la base de datos PostgreSQL
+## Configuración de la base de datos PostgreSQL
 Configura la base de datos PostgreSQL según tus necesidades y actualiza la configuración en config/config.json (o el archivo de configuración correspondiente).
 
-Ejecución del servidor Node.js
+## Ejecución del servidor Node.js
 Ejecuta el servidor Node.js:
-cd ..
-npm start
+```cd ..```
+```npm start```
 
-Ejecución de la aplicación Angular
+## Ejecución de la aplicación Angular
 Ejecuta la aplicación Angular:
-cd client
-ng serve
+```cd client```
+```ng serve```
 
 Abre tu navegador web y ve a http://localhost:4200 para acceder a la aplicación.
 
-Contribución
+## Contribución
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
-Haz un fork del proyecto en GitHub.
-Crea una nueva rama en tu repositorio con tu cambio: git checkout -b mi-rama.
-Realiza tus cambios y realiza commits descriptivos.
-Sube los cambios a tu repositorio en GitHub: git push origin mi-rama.
-Crea una solicitud de extracción (pull request) en el repositorio original.
+- Haz un fork del proyecto en GitHub.
+- Crea una nueva rama en tu repositorio con tu cambio: git checkout -b mi-rama.
+- Realiza tus cambios y realiza commits descriptivos.
+- Sube los cambios a tu repositorio en GitHub: git push origin mi-rama.
+- Crea una solicitud de extracción (pull request) en el repositorio original.
 
-Licencia
+## Licencia
 Este proyecto no está bajo ninguna Licencia.
 
