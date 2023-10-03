@@ -1,20 +1,37 @@
 # d_clone
 This project is for making an app-based discord-like chat application.
 
+## Contenido
+
+| Secciones |
+| --- |
+| [Descripción](#descripcion) |
+| [Stack](#stack) |
+| [Dependencias](#dependencias) |
+| [Configuración del Proyecto](#configuración-del-proyecto) |
+| [Dependencias de Node.js](#instalación-de-dependencias-del-servidor-nodejs)|
+|[Configuración de PostgreSQL](#configuración-de-la-base-de-datos-postgresql)|
+|[Ejecución del servidor Node.js](ejecución-del-servidor-nodejs)|
+|[Ejecución de la aplicación Angular](ejecución-de-la-aplicacion-angular)|
+|[Contribución](#contribución)|
+|[Licencia](#licencia)|
+| [Referencias](#referencias) |
+
 ## Descripción
 
 Descripción más detallada de tu proyecto. Explica qué hace y por qué es importante.
 
-## Tecnologías Utilizadas
+## Stack
 
-- PostgreSQL
-- Express.js
-- Angular
-- Node.js
+**Frontend Framework:** Angular
 
-## Requisitos Previos
+**Backend Framework:** Express
 
-Asegúrate de tener instaladas las siguientes herramientas antes de comenzar:
+**Base de Datos:** PostgreSQL
+
+**Javascript Runtime:** Node.js
+
+## Depenencias
 
 - Node.js: [https://nodejs.org/](https://nodejs.org/)
 - Angular CLI: [https://cli.angular.io/](https://cli.angular.io/)
@@ -22,20 +39,19 @@ Asegúrate de tener instaladas las siguientes herramientas antes de comenzar:
 
 ## Configuración del Proyecto
 
-1. Clona este repositorio en tu máquina local:
+1. Clonar repositorio
 
    ```shell
    git clone https://github.com/tu-usuario/tu-proyecto.git
 
 ## Instalación de dependencias del servidor Node.js
 
-En la carpeta raíz del proyecto, instala las dependencias del servidor Node.js:
+Instalar dependencias de Node.js
 
-
-```cd tu-proyecto```
+```cd proyecto/```
 ```npm install```
 
-## Cambia al directorio de la aplicación Angular y también instala las dependencias:
+2. Cambiar al directorio de la aplicación Angular e instalar dependencias:
 ```cd client```
 ```npm install```
 
@@ -65,4 +81,6 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 
 ## Licencia
 Este proyecto no está bajo ninguna Licencia.
+
+## Referencias
 
