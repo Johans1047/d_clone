@@ -24,7 +24,9 @@ Descripción más detallada de tu proyecto. Explica qué hace y por qué es impo
 
 ## Stack
 
-**Frontend Framework:** Angular
+**Frontend Framework:** Vue
+
+**CSS Framework:** Tailwind CSS
 
 **Backend Framework:** Express
 
