@@ -1,7 +1,6 @@
-# Título
-D-Clone
+# D-Clone
 
-
+# Tabla de Contenidos
 
 | Tabla de contenidos |
 | --- |
