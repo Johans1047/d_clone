@@ -1,27 +1,32 @@
-<!-- START JAVACRIPT -->
-<script lang="js">
-import LoginForm from "./components/LoginForm.vue";
+<!-- START TYPESCRIPT -->
+<script lang="ts">
+import { RouterView } from 'vue-router';
+
 export default {
-name: "App",
+    name: "App",
+    
     data(){
         return {}
     },
     
-    components: {
-        LoginForm
-    },
+    methods: {},
     
-methods: {},
+    computed: {},
+    
+    props: {},
+    
+    components: {
+        RouterView
+    }
     
 }
+
 </script>
-<!-- END JAVASCRIPT -->
+<!-- END TYPESCRIPT -->
 
 <!-- START HTML -->
 <template>
-    <div class="w-screen h-screen flex justify-center items-center">
-        <LoginForm/>
-    </div>
+    <RouterView/>
 </template>
 <!-- END HTML -->
 

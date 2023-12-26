@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./src/**/*.{html,js,vue}'],
+    content: ["./src/**/*.{html,ts,vue}"],
     theme: {
         extend: {
             width: {
@@ -19,7 +19,7 @@ export default {
                 '8/10': '80%',
                 '17/20': '85%',
                 '9/10': '90%',
-                '19/20': '95%'
+                '19/20': '95%',
             },
             height: {
                 '1/20': '5%',
@@ -37,10 +37,9 @@ export default {
                 '8/10': '80%',
                 '17/20': '85%',
                 '9/10': '90%',
-                '19/20': '95%'
+                '19/20': '95%',
             }
         },
-    },
-    plugins: [],
+        plugins: [],
+    }
 }
-

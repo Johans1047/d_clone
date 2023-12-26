@@ -1,5 +1,4 @@
-const connection = require("../../connection")
-
+import { connection } from "../../connection";
 class UserModel {
 
     /**
@@ -134,6 +133,4 @@ class UserModel {
     }
 }
 
-module.exports = {
-    UserModel
-};
+export default UserModel;
