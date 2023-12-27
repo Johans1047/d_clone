@@ -16,7 +16,7 @@ export default {
     },
 
     methods: {
-        /** Adds a TalwindCSS outline class to a div when the function is called.
+        /** Adds a TalwindCSS border-color class when the function is called
          * 
          * @param {string} divId: the id of the div the function will add an outline to.
          */
@@ -75,9 +75,9 @@ export default {
             type: String,
             required: true,
             default: "text",
-            // validator(value: string): boolean{
-            //     return ["text", "email", "number", "tel", "search", "url"].includes(value);
-            // }
+            validator: (value: string): boolean => {
+                return ["text", "email", "number", "tel", "search", "url"].includes(value);
+            }
         },
 
         modelValue: {}
