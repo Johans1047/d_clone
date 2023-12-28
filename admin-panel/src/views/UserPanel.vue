@@ -20,7 +20,8 @@ export default {
 <!-- END TYPESCRIPT -->
 
 <!-- START HTML -->
-<section id="user-panel"></section>
+<template>
+    <section id="user-panel"></section>
 </template>
 <!-- END HTML -->
 

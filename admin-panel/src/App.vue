@@ -30,7 +30,7 @@ export default {
 <template>
     <div id="screen" class="flex w-screen h-screen bg-neutral-200">
         <AdminSidebar/>
-        <main id="panel" class="w-full">
+        <main id="panel" class="w-full" >
             <AdminHeader/>
             <RouterView/>
         </main>
