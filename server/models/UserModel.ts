@@ -1,5 +1,4 @@
-const connection = require("../../connection")
-
+import { connection } from "../../connection";
 class UserModel {
 
     /**
@@ -8,8 +7,8 @@ class UserModel {
      * @async 
      * @param {number} limit the limit of rows to be returned by the query
      * @param {number} offset the offset value from which the query will start returning results
-     * @returns {Promise<Object>[]} A promise that resolves to an array of rows represented as objects, containing the results of the query.
-     * @throws If the connection to the database failed in any step.
+     * @returns {Promise<Object>} A promise that resolves to an object representing the result of the query.
+     * @throws {Error} If the connection to the database failed in any step.
      */
 
     async getAllUsers(limit: number, offset: number) {
@@ -41,7 +40,7 @@ class UserModel {
      * 
      * @async
      * @param {number} id the ID of the user being requested
-     * @returns {Promise<Object>[]} A promise that resolves to an array of rows represented as objects containing the user matching the ID.
+     * @returns {Promise<Object>} A promise that resolves to an object representing the result of the query.
      * @throws {Error} If there is an error while querying the database.
      */
 
@@ -70,7 +69,8 @@ class UserModel {
      * @param {string} password The password created by the user
      * @param {Date} birthDate The date the user was born
      * @param {boolean} newsletter Whether the user chooses to opt in or out of the newsletter
-     * @returns {Promise<Object>[]} A promise that resolves to an array containing the rows affected by the query. 
+     * @returns {Promise<Object>} A promise that resolves to an object representing the result of the query.
+     * @throws {Error} If the query to the database failed in any step.
      */
 
     async createUser(firstName: string, lastName: string, userName: string, email: string, password: string, birthDate: Date, newsletter: boolean) {
@@ -93,7 +93,8 @@ class UserModel {
      * @async
      * @param {number} id the ID of the user being requested.
      * @param {number} status the status selected by the user on default.
-     * @returns {Promise<Object>[]} A promise that resolves to an array of objects representing the affected rows.
+     * @returns {Promise<Object>} A promise that resolves to an object representing the result of the query.
+     * @throws {Error} If the database connection fails in any step.
      */
 
     async setOnlineStatus(id: number, status: number){
@@ -116,10 +117,11 @@ class UserModel {
      * @async
      * @param {number} id the ID of the user being requested.
      * @param {number} status the status selected by the user.
-     * @returns {Promise<Object>[]} A promise that resolves to an array of objects representing the affected rows.
+     * @returns {Promise<Object>} A promise that resolves to an object representing the result of the query.
+     * @throws {Error} If there was an error while querying the database.
      */
 
-    async setAccountStatus(id: number, status: number){
+    async setAccountStatus(id: number, status: number): Promise<Object>{
         const query = "UPDATE USERS SET ACCOUNT_STATUS = ? WHERE ID = ?";
         const values = [id, status];
 
@@ -134,6 +136,4 @@ class UserModel {
     }
 }
 
-module.exports = {
-    UserModel
-};
+export default UserModel;

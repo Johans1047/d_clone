@@ -1,9 +1,7 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
-import { RouterView } from 'vue-router';
-
 export default {
-    name: "App",
+    name: "ServerPanel",
     
     data(){
         return {}
@@ -15,22 +13,20 @@ export default {
     
     props: {},
     
-    components: {
-        RouterView
-    }
+    components: {}
     
 }
-
 </script>
 <!-- END TYPESCRIPT -->
 
 <!-- START HTML -->
 <template>
-    <RouterView/>
+    <section id="server-panel"></section>
 </template>
 <!-- END HTML -->
 
 <!-- START CSS -->
 <style scoped>
+
 </style>
 <!-- END CSS -->

@@ -1,9 +1,8 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
-import { RouterView } from 'vue-router';
-
+import DateInput from '@/components/DateInput.vue';
 export default {
-    name: "App",
+    name: "TestView",
     
     data(){
         return {}
@@ -16,21 +15,23 @@ export default {
     props: {},
     
     components: {
-        RouterView
+        DateInput
     }
     
 }
-
 </script>
 <!-- END TYPESCRIPT -->
 
 <!-- START HTML -->
 <template>
-    <RouterView/>
+    <div class="w-screen h-screen bg-green-600 flex justify-center items-center">
+        <DateInput input-id="birthdate"/>
+    </div>
 </template>
 <!-- END HTML -->
 
 <!-- START CSS -->
 <style scoped>
+
 </style>
 <!-- END CSS -->
