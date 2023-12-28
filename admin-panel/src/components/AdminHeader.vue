@@ -1,5 +1,7 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
+import SearchboxItem from "./SearchBox.vue";
+
 export default {
     name: "AdminHeader",
     
@@ -14,7 +16,9 @@ export default {
     
     computed: {},
     
-    components: {}
+    components: {
+        SearchboxItem 
+    }
     
 }
 </script>
@@ -27,6 +31,7 @@ export default {
             <span class="hidden md:inline mr-2">Logged in as:</span>
             <span class="font-bold" id="current-user">{{ currentUser }}</span>
         </h2>
+        <SearchboxItem/>
         <div id="image-container">
             <img :src=profilePictureURL alt="profile picture" height="32" width="32"/>
         </div>
