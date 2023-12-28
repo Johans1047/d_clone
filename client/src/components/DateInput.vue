@@ -15,9 +15,9 @@ export default {
     },
 
     methods: {
-                /** Adds a TalwindCSS border-color class when the function is called
+        /** Adds a TalwindCSS border-color class when the function is called
          * 
-         * @param {string} divId: the id of the div the function will add an outline to.
+         * @param {string} divId: the id of the div the function will add border color to.
          */
          focus(divId: string): void | boolean {
             const div = document.getElementById(divId) as HTMLDivElement;
@@ -33,7 +33,7 @@ export default {
 
         /** Removes a TalwindCSS border-color class when the function is called
          * 
-         * @param divId the id of the div the function will remove an outline from.
+         * @param {string} divId the id of the div the function will remove the border color from.
          */
         blur(divId: string): void | boolean {
             const div = document.getElementById(divId) as HTMLDivElement;
@@ -49,10 +49,10 @@ export default {
 
     computed: {
         dateValue: {
-            get(): string{
-                return this.modelValue as string; 
+            get(): string {
+                return this.modelValue as string;
             },
-            set(date: string): void{
+            set(date: string): void {
                 this.$emit("update:modelValue", date);
             }
         }
@@ -76,7 +76,9 @@ export default {
 <template>
     <div :id=containerId>
         <div :id=wrapperId class="flex my-4 border-b-2 border-neutral-400">
-            <input type="date" required placeholder="Date of birth" :name=inputId :id=inputId class="text-base sm:text-xl py-2 px-4 flex-1 bg-transparent focus:outline-none" @focus="focus(wrapperId)" @blur="blur(wrapperId)" v-model=dateValue>
+            <input type="date" required placeholder="Date of birth" :name=inputId :id=inputId
+                class="text-base sm:text-xl py-2 px-4 flex-1 bg-transparent focus:outline-none" @focus="focus(wrapperId)"
+                @blur="blur(wrapperId)" v-model=dateValue>
         </div>
     </div>
 </template>
@@ -93,7 +95,7 @@ input[type="date"]:focus::before {
     content: "" !important;
 }
 
-input[type=date]:required:valid::before{
+input[type=date]:required:valid::before {
     content: "" !important;
 }
 

@@ -18,9 +18,9 @@ export default {
     methods: {
         /** Adds a TalwindCSS border-color class when the function is called
          * 
-         * @param {string} divId: the id of the div the function will add an outline to.
+         * @param {string} divId: the id of the div the function will add border color to.
          */
-        focus(divId: string): void | boolean {
+         focus(divId: string): void | boolean {
             const div = document.getElementById(divId) as HTMLDivElement;
 
             if (!div.classList.contains("border-b-blue-400")) {
@@ -34,7 +34,7 @@ export default {
 
         /** Removes a TalwindCSS border-color class when the function is called
          * 
-         * @param divId the id of the div the function will remove an outline from.
+         * @param {string} divId the id of the div the function will remove the border color from.
          */
         blur(divId: string): void | boolean {
             const div = document.getElementById(divId) as HTMLDivElement;
