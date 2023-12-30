@@ -37,7 +37,7 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <aside class="bg-slate-600 text-white h-full 2xl:w-72 xl:w-64 lg:w-56 md:w-48">
+    <aside class="bg-blue-800 text-white h-full 2xl:w-72 xl:w-64 lg:w-56 md:w-48">
         <RouterLink to="/" class="block text-xl font-bold w-full text-center my-4">Admin panel</RouterLink>
         <SidebarItem v-for="(section, index) in sections" :name="section['name']" :component="section['component']" :icon="section['icon']" :key="index"/>
     </aside>

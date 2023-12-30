@@ -41,7 +41,7 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <RouterLink :to=viewPath class="flex items-center py-2 px-4 2xl:px-6 hover:bg-slate-400 duration-100 text-lg">
+    <RouterLink :to=viewPath class="flex items-center py-2 px-4 2xl:px-6 hover:bg-blue-400 duration-100 text-lg">
         <i :class="bootstrapIcon"></i>
         <span class="mx-4">{{ name }}</span>
     </RouterLink>
