@@ -1,4 +1,4 @@
-import { connection } from "../../connection";
+import connection from "../../connection.ts";
 class UserModel {
 
     /**
@@ -14,20 +14,22 @@ class UserModel {
     async getAllUsers(limit: number, offset: number) {
         let query = `SELECT * FROM USERS`;
         let values: number[] = [];
-
+        let i = 1;
         if (limit) {
-            query += `LIMIT ?`;
+            query += `LIMIT $${i}`;
             values.push(limit);
+            i++;
         }
         if (offset) {
-            query += `OFFSET ?`;
+            query += `OFFSET $${i}`;
             values.push(offset);
+            i++;
         }
 
         return new Promise((resolve, reject) => {
             connection.query(query, values, (error: Error, result: any) => {
                 if (error) {
-                    reject(new Error(`Error ejecutando el query ${query}!\n=========================\n${error.message}`));
+                    reject(new Error(`Error ejecutando el query "${query}"!\n=========================\n${error.message}`));
                 }
                 resolve(result);
             });
@@ -45,13 +47,13 @@ class UserModel {
      */
 
     async getUser(id: number) {
-        const query = "SELECT * FROM USERS WHERE ID = ?";
+        const query = "SELECT * FROM USERS WHERE ID = $1";
         const values = [id];
 
         return new Promise((resolve, reject) => {
             connection.query(query, values,(error: Error, result: any) => {
                 if(error){
-                    reject(new Error(`Error ejecutando el query ${query}!\n=========================\n${error.message}`));
+                    reject(new Error(`Error ejecutando el query "${query}"!\n=========================\n${error.message}`));
                 }
                 resolve(result);
             });
@@ -74,13 +76,13 @@ class UserModel {
      */
 
     async createUser(firstName: string, lastName: string, userName: string, email: string, password: string, birthDate: Date, newsletter: boolean) {
-        const query = "INSERT INTO USERS (FIRST_NAME, LAST_NAME, USER_NAME, EMAIL, PASSWORD, BIRTHDATE, NEWSLETTER) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        const query = "INSERT INTO USERS (FIRST_NAME, LAST_NAME, USER_NAME, EMAIL, PASSWORD, BIRTHDATE, NEWSLETTER) VALUES ($1, $2, $3, $4, $5, $6, $7)";
         const values = [firstName, lastName, userName, email, password, birthDate, newsletter];
 
         return new Promise((resolve, reject) => {
             connection.query(query, values, (error: Error, result: any) => {
                 if (error) {
-                    reject(new Error(`Error ejecutando el query ${query}!\n=========================\n${error.message}`));
+                    reject(new Error(`Error ejecutando el query "${query}"!\n=========================\n${error.message}`));
                 }
                 resolve(result);
             });
@@ -98,13 +100,13 @@ class UserModel {
      */
 
     async setOnlineStatus(id: number, status: number){
-        const query = "UPDATE USERS SET ONLINE_STATUS = ? WHERE ID = ?";
+        const query = "UPDATE USERS SET ONLINE_STATUS = $1 WHERE ID = $2";
         const values = [id, status];
 
         return new Promise((resolve, reject) => {
             connection.query(query, values, (error: Error, result: any) => {
                 if (error) {
-                    reject(new Error(`Error ejecutando el query ${query}!\n=========================\n${error.message}`));
+                    reject(new Error(`Error ejecutando el query "${query}"!\n=========================\n${error.message}`));
                 }
                 resolve(result);
             });
@@ -122,13 +124,13 @@ class UserModel {
      */
 
     async setAccountStatus(id: number, status: number): Promise<Object>{
-        const query = "UPDATE USERS SET ACCOUNT_STATUS = ? WHERE ID = ?";
+        const query = "UPDATE USERS SET ACCOUNT_STATUS = $1 WHERE ID = $2";
         const values = [id, status];
 
         return new Promise((resolve, reject) => {
             connection.query(query, values, (error: Error, result: any) => {
                 if (error) {
-                    reject(new Error(`Error ejecutando el query ${query}!\n=========================\n${error.message}`));
+                    reject(new Error(`Error ejecutando el query "${query}"!\n=========================\n${error.message}`));
                 }
                 resolve(result);
             });
