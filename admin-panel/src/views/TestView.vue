@@ -1,23 +1,23 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
-import DatabaseTable from '@/components/DatabaseTable.vue';
+import StyledTable from '@/components/StyledTable.vue';
 export default {
     name: "TestView",
-    
+
     data(){
         return {}
     },
-    
+
     methods: {},
-    
+
     computed: {},
-    
+
     props: {},
-    
+
     components: {
-        DatabaseTable
+        StyledTable
     }
-    
+
 }
 </script>
 <!-- END TYPESCRIPT -->
@@ -25,13 +25,13 @@ export default {
 <!-- START HTML -->
 <template>
     <section id="test-view" class="flex justify-center items-start">
-        <DatabaseTable/>
+        <div id="table-container" class="max-w-9/10">
+            <StyledTable request-model="users"/>
+        </div>
     </section>
 </template>
 <!-- END HTML -->
 
 <!-- START CSS -->
-<style scoped>
-
-</style>
+<style scoped></style>
 <!-- END CSS -->

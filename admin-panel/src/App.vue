@@ -28,13 +28,12 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <div id="screen" class="flex w-screen h-screen bg-neutral-200">
+    <div id="screen" class="flex w-screen min-h-screen bg-neutral-100">
         <AdminSidebar/>
-        <main id="panel" class="w-full" >
+        <main id="panel" class="w-full">
             <AdminHeader/>
             <RouterView/>
         </main>
-
     </div>
 </template>
 <!-- END HTML -->
