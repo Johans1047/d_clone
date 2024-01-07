@@ -1,10 +1,13 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
+import DataTable from '@/components/DataTable.vue';
 export default {
     name: "UserPanel",
     
     data(){
-        return {}
+        return {
+            model: "users" as string,
+        }
     },
     
     methods: {},
@@ -13,7 +16,9 @@ export default {
     
     props: {},
     
-    components: {}
+    components: {
+        DataTable
+    }
     
 }
 </script>
@@ -21,7 +26,7 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <section id="user-panel"></section>
+    <DataTable :request-model="model"/>
 </template>
 <!-- END HTML -->
 

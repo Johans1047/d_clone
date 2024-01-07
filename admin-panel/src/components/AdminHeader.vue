@@ -26,7 +26,7 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <header class="bg-white px-24 py-4 border-b border-b-neutral-400 flex items-center justify-between">
+    <header class="sticky top-0 bg-white px-24 py-4 border-b border-b-neutral-400 flex items-center justify-between w-full">
         <h2 class="text-xl">
             <span class="hidden md:inline mr-2">Logged in as:</span>
             <span class="font-bold" id="current-user">{{ currentUser }}</span>

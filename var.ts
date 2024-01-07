@@ -7,9 +7,9 @@ const ONLINE_STATUS: Object = {
 };
 
 const ACCOUNT_STATUS: Object = {
-    ACTIVE: 0 as number,
-    DELETED: 1 as number,
-    INACTIVE: 2 as number,
+    INACTIVE: 0 as number,
+    ACTIVE: 1 as number,
+    DELETED: 2 as number,
 };
 
 const ACTIVITY_TYPE: Object = {

@@ -1,6 +1,8 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
-import StyledTable from '@/components/StyledTable.vue';
+// import TablePaginator from '@/components/TablePaginator.vue';
+// import DataCard from '@/components/DataCard.vue';
+// import DataTable from '@/components/DataTable.vue';
 export default {
     name: "TestView",
 
@@ -15,8 +17,10 @@ export default {
     props: {},
 
     components: {
-        StyledTable
-    }
+    // TablePaginator,
+    // DataTable,
+    // DataCard
+}
 
 }
 </script>
@@ -24,14 +28,11 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <section id="test-view" class="flex justify-center items-start">
-        <div id="table-container" class="max-w-9/10">
-            <StyledTable request-model="users"/>
-        </div>
-    </section>
+    <div></div>
 </template>
 <!-- END HTML -->
 
 <!-- START CSS -->
-<style scoped></style>
+<style scoped>
+</style>
 <!-- END CSS -->

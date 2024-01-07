@@ -28,16 +28,19 @@ export default {
 
 <!-- START HTML -->
 <template>
-    <div id="screen" class="flex w-screen min-h-screen bg-neutral-100">
+    <div id="screen" class="flex w-full min-h-screen bg-neutral-100">
         <AdminSidebar/>
         <main id="panel" class="w-full">
             <AdminHeader/>
-            <RouterView/>
+            <section id="data" class="flex flex-col items-center">
+                <RouterView/>
+            </section>
         </main>
     </div>
 </template>
 <!-- END HTML -->
 
 <!-- START CSS -->
-<style scoped></style>
+<style scoped>
+</style>
 <!-- END CSS -->
