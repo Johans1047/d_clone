@@ -1,0 +1,851 @@
+-- POPULATE USERS
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER, 
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'ShadowPhoenix',
+    'ethan-turner@gmail.com',
+    '0vH>E>4sfic9b',
+    '1972-1-6',
+    FALSE,
+    3,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'QuantumGamer',
+    'noah-anderson@hotmail.com',
+    'K>IQ<ji2yyN<o6',
+    '1971-12-14',
+    FALSE,
+    4,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'MysticSpecter',
+    'liam-parker@outlook.com',
+    '6@_KJQKvS9trYHJ',
+    '1984-7-20',
+    FALSE,
+    1,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'TurboCobra',
+    'mason-bennett@outlook.com',
+    '>hishAv1RQW0W1y6cc',
+    '1967-5-21',
+    FALSE,
+    2,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'NeonBladeMaster',
+    'jackson-cole@hotmail.com',
+    'uKLpEV9ghk',
+    '2018-3-29',
+    TRUE,
+    4,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'CyberWraithX',
+    'aiden-mitchell@hotmail.com',
+    '9t1MDe=@ngV7C3Yj',
+    '1984-9-23',
+    FALSE,
+    2,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'BlazePulse',
+    'caleb-brooks@isys.edu.pa',
+    'wT.v.ASSX_SWdBHNeoCGFn',
+    '1981-6-9',
+    TRUE,
+    2,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'VortexRider',
+    'lucas-hayes@outlook.com',
+    'y@5T5JK.Gv7GEGboKN',
+    '2014-8-28',
+    TRUE,
+    2,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'PixelPioneer',
+    'owen-foster@outlook.com',
+    'viaXG0uB<r@RU0',
+    '1962-12-21',
+    TRUE,
+    1,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'ThunderFury99',
+    'wyatt-sullivan@isys.edu.pa',
+    'QdUfXTZNq=',
+    '2007-2-13',
+    TRUE,
+    0,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'CrystalViper',
+    'henry-taylor@hotmail.com',
+    'VAiR=;yx77Z',
+    '1994-1-21',
+    TRUE,
+    4,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'NovaWarlock',
+    'logan-harris@hotmail.com',
+    'gQiGxkc>cnAq7',
+    '2002-9-9',
+    FALSE,
+    2,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'GalaxyStalker',
+    'samuel-reed@hotmail.com',
+    'm>;ZX<U.Ot',
+    '2016-10-26',
+    FALSE,
+    4,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'DarkNovaKnight',
+    'benjamin-dixon@outlook.com',
+    '-J0<9N>U5tZTmqNkJf',
+    '1963-6-14',
+    FALSE,
+    0,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'FrostyFury',
+    'levi-wallace@outlook.com',
+    'mJ@bxE2dlet6c4N=',
+    '1974-9-30',
+    TRUE,
+    4,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'VenomVortex',
+    'isaac-morgan@isys.edu.pa',
+    'fvUqnYTNkzG74A5wj_',
+    '1971-10-21',
+    FALSE,
+    3,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'QuantumRanger',
+    'gabriel-cooper@outlook.com',
+    'RFTgjID57o1KSc<I@mPU:2',
+    '2005-6-11',
+    FALSE,
+    3,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'StormHawk',
+    'elijah-bryant@utp.ac.pa',
+    'Dvcr6.grQL',
+    '2000-5-17',
+    TRUE,
+    2,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'InfernoSorcerer',
+    'daniel-wells@gmail.com',
+    'xOGh:SQV_7j9oWHYHryl12F.',
+    '1968-11-16',
+    TRUE,
+    4,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'LunarAssassin',
+    'carter-reynolds@isys.edu.pa',
+    '_yPLIP;bgbcT',
+    '1971-6-30',
+    TRUE,
+    0,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'OmegaStriker',
+    'andrew-porter@outlook.com',
+    'JUlSml2O9zZ.jhKCPi',
+    '2001-2-21',
+    FALSE,
+    2,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'ZenithRogue',
+    'nathan-sullivan@hotmail.com',
+    'mv0shx1P_>-j.NZB.K?',
+    '2005-10-20',
+    TRUE,
+    4,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'CosmicCrusader',
+    'nicholas-walker@utp.ac.pa',
+    'tRDGl4.r:Rp0_a',
+    '1993-5-26',
+    TRUE,
+    3,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'SpectralSpecter',
+    'adam-martinez@outlook.com',
+    'bqy_IEGB.@>u>lD4v;MZ',
+    '1964-4-3',
+    TRUE,
+    2,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'PhantomProwler',
+    'dylan-peterson@gmail.com',
+    'z7UB1VjAcjB7Mp1KnQOZAGL.',
+    '1966-8-17',
+    TRUE,
+    1,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'AstralPhoenix',
+    'emma-thompson@hotmail.com',
+    'ZkhoT;R?HDKKE',
+    '1969-9-24',
+    TRUE,
+    4,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'BladeDynamo',
+    'olivia-parker@isys.edu.pa',
+    'e6Ss;@x7pMtI0Z-Nj',
+    '2011-11-25',
+    FALSE,
+    3,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'TitanBlitz',
+    'ava-mitchell@hotmail.com',
+    '0fm.k@s9Wp2JR-G=;b',
+    '2001-2-16',
+    TRUE,
+    3,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'CelestialHunter',
+    'sophia-bennett@gmail.com',
+    'rMUV?LL=LKz',
+    '1978-9-11',
+    FALSE,
+    4,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'QuantumQuasar',
+    'isabella-cole@gmail.com',
+    'Iz7w>_s-t',
+    '1977-10-25',
+    FALSE,
+    3,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'StarfallStrider',
+    'mia-turner@utp.ac.pa',
+    'niWcHFOWK6AhKgKN',
+    '2021-4-28',
+    FALSE,
+    4,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'NexusReaper',
+    'amelia-hayes@isys.edu.pa',
+    'fEJQHGS0AxK',
+    '1998-12-12',
+    FALSE,
+    1,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'CyberSamuraiX',
+    'harper-brooks@hotmail.com',
+    'ctCbxwIv8SoM',
+    '2007-10-19',
+    TRUE,
+    3,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'NovaSpectre',
+    'evelyn-foster@hotmail.com',
+    '5cAJVReInS:;ZYFjS',
+    '1993-11-27',
+    TRUE,
+    3,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'StealthViper',
+    'abigail-bennett@utp.ac.pa',
+    'cDsqU:ook8',
+    '1975-1-27',
+    TRUE,
+    1,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'InfinityGlider',
+    'emily-taylor@hotmail.com',
+    'HzTKF_cpyOAq',
+    '1992-11-18',
+    FALSE,
+    1,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'CyberShockwave',
+    'scarlett-harris@outlook.com',
+    '3pFinw?FRden_c;:',
+    '1973-9-9',
+    FALSE,
+    4,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'AlphaWolfPack',
+    'grace-reed@isys.edu.pa',
+    'kEuXmfn1s7c@Q7BKqK',
+    '1976-5-10',
+    FALSE,
+    2,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'BlazeRangerX',
+    'lily-dixon@gmail.com',
+    'Bcbes:DWSyIr>dgNnt_uj-pk',
+    '2017-6-1',
+    FALSE,
+    2,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'VortexVanguard',
+    'chloe-sullivan@utp.ac.pa',
+    'ZBdJydJG7J_?JJE',
+    '1976-2-5',
+    TRUE,
+    3,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'ThunderBlitz',
+    'zoey-wallace@outlook.com',
+    '=OI2qBf-a',
+    '1972-1-19',
+    FALSE,
+    2,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'QuantumChampion',
+    'aria-morgan@isys.edu.pa',
+    'HNY6ffuza',
+    '2021-4-3',
+    FALSE,
+    1,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'DarkMarauder',
+    'layla-cooper@outlook.com',
+    'xA.19klG',
+    '1980-5-24',
+    FALSE,
+    1,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'GalacticGamer',
+    'ella-bryant@gmail.com',
+    '_TWv6vzsk-oV',
+    '2013-2-3',
+    TRUE,
+    1,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'SolarSorcerer',
+    'scarlett-wells@gmail.com',
+    'U6-me56z:yi5zG?QUq0T10V',
+    '1972-3-10',
+    FALSE,
+    3,
+    2
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'FrostbiteNinja',
+    'riley-reynolds@hotmail.com',
+    'B>F5EfWw@ilkbxpv',
+    '1989-7-3',
+    TRUE,
+    2,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'NebulaNomad',
+    'stella-porter@hotmail.com',
+    '3.c41-3l8ii2',
+    '1995-11-13',
+    TRUE,
+    1,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'InfernoSpectre',
+    'penelope-sullivan@utp.ac.pa',
+    'FA;u3.jsm=l?bT-RT',
+    '1997-7-10',
+    TRUE,
+    3,
+    0
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'LunarLancer',
+    'victoria-walker@gmail.com',
+    '9EyeXM-ywQh9h8L',
+    '1968-12-3',
+    TRUE,
+    4,
+    1
+);
+INSERT INTO USERS (
+    USERNAME,
+    EMAIL,
+    PASSWORD,
+    BIRTHDATE,
+    NEWSLETTER,
+    ONLINE_STATUS,
+    ACCOUNT_STATUS
+)VALUES(
+    'ZenithZephyr',
+    'lucy-martinez@hotmail.com',
+    'COawmaLq2?cn.nX0Urk?',
+    '1988-11-7',
+    FALSE,
+    1,
+    1
+);
