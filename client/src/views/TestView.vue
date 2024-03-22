@@ -1,7 +1,7 @@
 <!-- START TYPESCRIPT -->
 <script lang="ts">
 export default {
-    name: "App",
+    name: "TestView",
     
     data(){
         return {}

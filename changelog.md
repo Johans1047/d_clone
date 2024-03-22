@@ -1,0 +1,12 @@
+## 3-21-2024
+- Created `database.sql` for database definition. 
+- As of this date, the contents of `database.sql` include:
+    - USERS
+    - SERVERS
+    - MEMBERS
+    - MEMBER_ROLES
+    - CHANNELS
+    - ROLES
+    - PERMISSIONS
+    - ROLE_PERMISSIONS
+- Created interface IModels for all Model classes to include basic CRUD operations.
