@@ -3,6 +3,9 @@ import connection from "../connection";
 import { QueryResult } from "pg";
 
 class UserModel implements IModel {
+    data(result: Promise<QueryResult<any>>): Promise<{}[]> {
+        const query = ""
+    }
     insert(...args: any[]): Promise<QueryResult<any>> {
         throw new Error("Method not implemented.");
     }

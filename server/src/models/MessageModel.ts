@@ -2,7 +2,25 @@ import IModel from "./IModel";
 import connection from "../connection";
 import { QueryResult } from "pg";
 
+interface Message {
+    id: number;
+    senderID: number;
+    message: string;
+    sentDate: Date;
+    receivedDate?: Date | null;
+}
+
 class MessageModel implements IModel {
+    /**
+     * Formats the rows of a QueryResult object into an array of TypeScript interface types.
+     * @param result A promise that resolves to the result of the query executed.
+     * @returns The rows of the resulting query, formatted to the appropriate Message object.
+     */
+    async data(result: Promise<QueryResult<any>>): Promise<{}[]>{
+        const data = (await result).rows;
+
+        return [{}]; // REMOVE
+    }
     /**
      * Saves a sent message to the database
      * @param userId the ID of the user who sent the message

@@ -9,4 +9,7 @@
     - ROLES
     - PERMISSIONS
     - ROLE_PERMISSIONS
+    - MESSAGES
+    - MESSAGE_CARD (VIEW)
 - Created interface IModels for all Model classes to include basic CRUD operations.
+- Created UserModel and MessageModel for interacting with the User and Message models through the API
