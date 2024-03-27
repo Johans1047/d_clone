@@ -6,7 +6,7 @@ const connection = new Pool({
     port: 5432,
     database: "d_clone",
     user: "d_clone_system",
-    password: process.env.PG_PASSWORD
+    password: process.env.password
 });
 
 export default connection;
