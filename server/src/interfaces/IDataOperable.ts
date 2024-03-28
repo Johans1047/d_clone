@@ -1,5 +1,5 @@
 interface IDataOperable {
-    id: number;
+    id: number | undefined;
 }
 
 export default IDataOperable;

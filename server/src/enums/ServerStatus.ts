@@ -1,0 +1,5 @@
+enum ServerStatus {
+    ACTIVE,
+    DELETED,
+}
+

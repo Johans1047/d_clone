@@ -16,9 +16,18 @@ const model = new UserModel();
 
 app.get("/", function(req: Request, res: Response): void {
 
-    model.data();
-
-    // res.send("<h1>RubielGOD</h1><hr>");
+    let map = model.unpack({
+        id: undefined,
+        fullName: "",
+        userName: "",
+        email: "",
+        password: "",
+        newsletter: false,
+        creationDate: new Date(),
+        status: 0,
+    });
+    
+    res.json(map);
 
 });
 

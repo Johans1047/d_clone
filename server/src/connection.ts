@@ -1,5 +1,4 @@
 import { Pool } from "pg";
-import dotenv from "dotenv";
 
 const connection = new Pool({
     host: "127.0.0.1",

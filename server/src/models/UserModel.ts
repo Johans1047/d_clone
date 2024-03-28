@@ -2,28 +2,46 @@ import { QueryResult } from "pg";
 import connection from "../connection";
 
 import IUser from "../interfaces/IUser";
+import UserStatus from "../enums/UserStatus";
 import IModel from "../interfaces/IModel";
+import ISQLMappable from "../interfaces/ISQLMappable";
+import { Case, caseConvert }  from "../conversion";
 
 class UserModel implements IModel{
+
     data(result: QueryResult<any>): IUser[] {
         const data = result.rows;
         
         console.log(JSON.stringify(data));
 
+        /* BEGIN REMOVE */
         const user: IUser = {
             id: 0,
             fullName: "",
             userName: "",
             email: "",
             password: "",
-            newsletter: false
+            newsletter: false,
+            creationDate: new Date(),
+            status: UserStatus.UNVERIFIED,
         }
 
         return [user];
-        // throw new Error("Method not implemented.");
+        /* END REMOVE */
     }
 
-    insert(row: IUser): QueryResult<any> {
+    unpack(user: IUser): ISQLMappable {
+        const map: ISQLMappable = { values: [] };
+
+        for(let key in user) {
+            if(user[key] != undefined) {
+                map.values.push({colName: caseConvert(key, Case.CAMEL, Case.UPPER), value: user[key]});
+            }
+        }
+        return map;
+    }
+
+    insert(row: IUser): Promise<QueryResult<any>> {
         throw new Error("Method not implemented.");
     }
 
@@ -46,16 +64,24 @@ class UserModel implements IModel{
         return result;
     }
 
-    get(id: number): QueryResult<any> {
+    get(id: number): Promise<QueryResult<any>> {
+        const query: string = "SELECT * FROM USERS WHERE ID = $1";
+        const data = [id];
+        
+        const result: Promise<QueryResult<any>> = connection.query(query, data);
+        return result;
+    }
+
+    update(values: IUser): Promise<QueryResult<any>> {
         throw new Error("Method not implemented.");
     }
 
-    update(values: IUser): QueryResult<any> {
-        throw new Error("Method not implemented.");
-    }
+    delete(id: number): Promise<QueryResult<any>> {
+        const query: string = "DELETE FROM USERS WHERE ID = $1";
+        const data = [id];
 
-    delete(id: number): QueryResult<any> {
-        throw new Error("Method not implemented.");
+        const result: Promise<QueryResult<any>> = connection.query(query, data);
+        return result;
     }
 }
 
